@@ -36,8 +36,8 @@ All implementation details, motivations, and results are available in the paper 
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/jovanak1/annotation-generation-and-expert-level-testing.git
+cd annotation-generation-and-expert-level-testing
 ```
 2. (Optional) Create a virtual environment:
 ```bash
