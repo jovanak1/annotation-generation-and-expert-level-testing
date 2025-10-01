@@ -1,6 +1,6 @@
 # annotation-generation-and-expert-level-testing
-#Honest and Reliable Evaluation and Expert Equivalence Testing of Automated Neonatal Seizure Detection
-##Overview
+# Honest and Reliable Evaluation and Expert Equivalence Testing of Automated Neonatal Seizure Detection
+## Overview
 This repository contains the source code for the **expert-level tests** and the **annotation generation methods (A and B)** used in:
 
 > *Honest and Reliable Evaluation and Expert Equivalence Testing of Automated Neonatal Seizure Detection*  
