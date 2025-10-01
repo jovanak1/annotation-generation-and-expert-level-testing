@@ -9,25 +9,36 @@ This repository contains the source code for the **expert-level tests** and the 
 
 All implementation details, motivations, and results are available in the paper which is available at https://arxiv.org/abs/2508.04899.
 
-## Files
 
-annptation-generation-and-expert-level-testing/
-│
-├── methods/ # Functions for annotation generation methods A and B
-│ ├── method_A.py
-│ └── method_B.py
-│
-├── expert-level-tests/ # Expert-level test functions
-│ ├── IRA_vs_AI_Consensus_Agreement.py
-│ └── Multi_Rater_Agreement_Statistical_Turing_Tests.py
-│ └── Pairwise_Metric_Statistical_Non_Inferiority_Tests.py
-│
-├── examples/ # Example scripts showing usage
-│ └── example_method_A.py
-│ └── example_method_B.py
-│
-├── utils.py # Shared utility functions
-├── README.md # This file
-├── LICENSE # License file (e.g., MIT)
-├── requirements.txt # Python dependencies
-└── .gitignore # Ignored files for Git
+## Repository Structure
+
+- **methods/** – Functions for annotation generation methods A and B
+  - `method_A.py`
+  - `method_B.py`
+
+- **expert-level-tests/** – Expert-level test functions
+  - `IRA_vs_AI_Consensus_Agreement.py`
+  - `Multi_Rater_Agreement_Statistical_Turing_Tests.py`
+  - `Pairwise_Metric_Statistical_Non_Inferiority_Tests.py`
+
+- **examples/** – Example scripts showing usage
+  - `example_method_A.py`
+  - `example_method_B.py`
+
+- `utils.py` – Shared utility functions  
+- `README.md` 
+- `LICENSE` 
+- `requirements.txt` – Python dependencies  
+- `.gitignore` 
+---
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+## Citation
+
+If you use this code, please cite the paper associated with this repository.
+
