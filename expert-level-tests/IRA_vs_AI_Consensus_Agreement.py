@@ -1,6 +1,6 @@
 import pandas as pd
 from tqdm import tqdm
-from additional_tools import *
+from utils import *
 
 def IRA_vs_AI_Majority_Comparison(annotations, predictions, n_bootstrap, metric):
     """
@@ -46,6 +46,7 @@ def IRA_vs_AI_Majority_Comparison(annotations, predictions, n_bootstrap, metric)
     IRA = {'Human': round(np.mean(IRA_list), 10), 'AI': round(np.mean(IRA_AI_list), 10)}
     CI = {'Human': (round(np.mean(IRA_list) - 1.96 * np.std(IRA_list), 10), round(np.mean(IRA_list) + 1.96 * np.std(IRA_list), 10)), 'AI': (round(np.mean(IRA_AI_list) - 1.96 * np.std(IRA_AI_list), 10), round(np.mean(IRA_AI_list) + 1.96 * np.std(IRA_AI_list), 10))}
     return IRA, CI
+
 
 
 
