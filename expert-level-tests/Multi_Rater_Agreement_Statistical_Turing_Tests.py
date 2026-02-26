@@ -48,13 +48,13 @@ def fleiss_kappa_delta_bootstrap(annotations, predictions, i_anot,  N=1000, per_
     """
     _verify_mulitple_annotators(annotations)
     if per_annotator:
-        deltas = np.zeros((annotations[0].shape[0], N)) # koliko anotatora pa za svakog N vrednosti
+        deltas = np.zeros((annotations[0].shape[0], N)) 
         deltas2 = np.zeros(N)
     else:
-        deltas = np.zeros(N) # inace samo N vrednosti
+        deltas = np.zeros(N) 
     for i in tqdm(range(N), desc='Running boostrap for non-inferiority test'):
-        indices = np.random.choice(len(annotations), len(annotations), replace=True) # true znaci da isti broj moze da se pojavi vise puta
-        sampled_annotations = [annotations[index] for index in indices] # ovde je semplovanje takvo da jedna beba moze vise puta da se pojavi
+        indices = np.random.choice(len(annotations), len(annotations), replace=True) 
+        sampled_annotations = [annotations[index] for index in indices] 
         sampled_predictions = [predictions[index] for index in indices]
 
         mean_delta, all_delta = fleiss_kappa_delta(sampled_annotations.copy(), sampled_predictions.copy())
@@ -94,4 +94,5 @@ def fleiss_kappa_delta_bootstrap(annotations, predictions, i_anot,  N=1000, per_
         p = p_value_mean
 
     return p, deltas, np.mean(deltas), np.mean(deltas) - 1.96 * np.std(deltas), np.mean(deltas) + 1.96 * np.std(deltas)
+
 
