@@ -8,7 +8,6 @@ def fleiss_kappa_delta(annotations, predictions):
     """
     Calculate the difference between the Fleiss' kappa for all annotators vs the Fleiss' kappa when the AI replaces an annotator.
     :param annotations: Annotations for each baby from each annotator.
-    :param annotations: Annotations for each baby from each annotator.
     :param predictions: Predictions for each baby.
     :return: Fleiss' kappa Delta
     """
@@ -95,3 +94,4 @@ def fleiss_kappa_delta_bootstrap(annotations, predictions, i_anot,  N=1000, per_
         p = p_value_mean
 
     return p, deltas, np.mean(deltas), np.mean(deltas) - 1.96 * np.std(deltas), np.mean(deltas) + 1.96 * np.std(deltas)
+
